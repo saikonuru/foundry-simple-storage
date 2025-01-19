@@ -1,0 +1,51 @@
+forge --init
+forge compile
+forge create SimpleStorage --interactive 
+<PRIVATE_KEY>
+forge create SimpleStorage --interactive  --rpc-url http://127.0.0.1:8545 --private-key <PRIVATE_KEY>
+
+forge script script/DeploySimpleStorage.s.sol // Temporary
+forge script script/DeploySimpleStorage.s.sol --rpc-url http://127.0.0.1:8545 --broadcast --private-key <PRIVATE_KEY>
+forge script script/DeploySimpleStorage.s.sol --rpc-url $SEPOLIA_RPC_URL --private-key $METAMASK_PRIVATE_KEY --broadcast
+
+cast --to-base 0xac458 dec
+
+cast --to-base 0x00000000000000000000000000000000000000000000000000000000000007c0 dec
+only private key can sign  a transaction
+
+source ./.env
+echo $RPC_URL
+
+
+forge script script/DeploySimpleStorage.s.sol --rpc-url $RPC_URL --broadcast --private-key $PRIVATE_KEY
+
+//ERC 2335
+
+cast wallet import defaultKey --interactive 
+
+`defaultKey` keystore was saved successfully. Address: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+Anvi123
+cast wallet list
+
+forge script script/DeploySimpleStorage.s.sol --rpc-url $RPC_URL --account defaultKey --sender 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266 --broadcast -vvvv
+
+/home/sairam/.foundry/keystores
+
+Contract Address: 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9
+
+// Send transaction
+cast send 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9 "store(uint256)" 1984 --rpc-url $RPC_URL --private-key $PRIVATE_KEY
+
+cast call 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9 "retrieve()" 
+
+forge fmt
+
+
+// zksync
+curl -L https://raw.githubusercontent.com/matter-labs/foundry-zksync/main/install-foundry-zksync | zsh
+anvil-zksync
+
+
+
+
+

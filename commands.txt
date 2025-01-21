@@ -28,6 +28,7 @@ Anvi123
 cast wallet list
 
 forge script script/DeploySimpleStorage.s.sol --rpc-url $RPC_URL --account defaultKey --sender 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266 --broadcast -vvvv
+forge script script/DeployFundMe.s.sol
 
 /home/sairam/.foundry/keystores
 
@@ -46,6 +47,12 @@ curl -L https://raw.githubusercontent.com/matter-labs/foundry-zksync/main/instal
 anvil-zksync
 
 
+forge install smartcontractkit/chainlink-brownie-contracts --no-commit
+
+// to run specific test
+forge test --match-test testPriceFeedVersionIsAccurate -vvv
 
 
-
+forge test  --match-test testPriceFeedVersionIsAccurate -vvvv --fork-url $SEPOLIA_RPC_URL
+forge test -vvvv --fork-url $SEPOLIA_RPC_URL
+forge coverage --fork-url $SEPOLIA_RPC_URL

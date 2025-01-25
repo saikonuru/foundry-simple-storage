@@ -56,3 +56,4 @@ forge test --match-test testPriceFeedVersionIsAccurate -vvv
 forge test  --match-test testPriceFeedVersionIsAccurate -vvvv --fork-url $SEPOLIA_RPC_URL
 forge test -vvvv --fork-url $SEPOLIA_RPC_URL
 forge coverage --fork-url $SEPOLIA_RPC_URL
+/home/sairam/vsProfile.code-profile

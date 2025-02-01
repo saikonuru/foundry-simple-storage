@@ -12,3 +12,14 @@ docs/
 
 # Dotenv file
 .env
+bin/test/integration/InteractionsTest.abi
+bin/test/integration/InteractionsTest.bin
+bin/test/integration/InteractionsTest.t-solc-output.json
+lib/forge-std
+lib/forge-std
+bin/test/integration/InteractionsTest.json
+.gitignore
+.gas-snapshot
+.gitignore
+.gitignore
+lib/forge-std

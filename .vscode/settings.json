@@ -1,11 +1,7 @@
 {
   "wake.compiler.solc.remappings": ["forge-std/=lib/forge-std/src/"],
   "peacock.remoteColor": "#215732",
-  "cSpell.words": [
-    "Anvi",
-    "chainid",
-    "Funder"
-  ],
+  "cSpell.words": ["Anvi", "chainid", "Funder", "gasleft"],
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#2f7c47",
     "activityBar.background": "#2f7c47",

@@ -23,3 +23,12 @@ bin/test/integration/InteractionsTest.json
 .gitignore
 .gitignore
 lib/forge-std
+bin
+*.gas-snapshot
+.github
+.vscode
+broadcast
+broadcast
+cache
+lib
+out
